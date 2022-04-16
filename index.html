@@ -5,6 +5,19 @@
   <title>Notification Demo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- アドレスバー等のブラウザのUIを非表示 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- default(Safariと同じ) / black(黒) / black-translucent(ステータスバーをコンテンツに含める -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- ホーム画面に表示されるアプリ名 -->
+  <meta name="apple-mobile-web-app-title" content="Notification Demo">
+  <!-- ホーム画面に表示されるアプリアイコン -->
+  <link rel="apple-touch-icon" href="image/icon-192x192.png">
+  <!-- ウェブマニフェストの読み込み -->
+  <link rel="manifest" href="manifest.json">
+  <!-- service-worker js-->
+  <script defer src="service-worker.js"></script>
   <!-- リセットCSS -->
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <!-- BootstrapのCSSファイル読み込み -->
@@ -23,14 +36,15 @@
   </div>
   <div class="container d-flex">
     <div class="container w-75 mt-5 text-center">
-      <button type="button" id="enable" class="btn btn-lg btn-outline-success">1分後に通知を受け取る</button>
+      <button type="button" id="one-minute" class="btn btn-lg btn-outline-success">1分後に通知を受け取る</button>
     </div>
     <div class="container w-75 mt-5 text-center">
-      <button type="button" id="enable" class="btn btn-lg btn-outline-success">5分後に通知を受け取る</button>
+      <button type="button" id="five-minutes" class="btn btn-lg btn-outline-success">5分後に通知を受け取る</button>
     </div>
   </div>
 
-
+  <!-- main.js -->
+  <script src="script/main.js"></script>
   <!-- Bootstrap5 -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
