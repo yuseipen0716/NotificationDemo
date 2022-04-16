@@ -6,7 +6,7 @@ pushBtn.addEventListener('click', allowWebPush);
  */
 self.addEventListener('load', async() => {
   if ('serviceWorker' in navigator) {
-    window.sw = await navigator.serviceWorker.register('/service-worker.js'});
+    window.sw = await navigator.serviceWorker.register('/service-worker.js');
   }
 });
 
