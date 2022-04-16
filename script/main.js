@@ -1,3 +1,6 @@
+const pushBtn = document.querySelrctor('.js-push-btn');
+pushBtn.addEventListener('click', allowWebPush);
+
 /**
  * service workerの登録
  */
