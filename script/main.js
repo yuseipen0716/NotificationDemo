@@ -1,4 +1,4 @@
-const pushBtn = document.querySelrctor('.js-push-btn');
+const pushBtn = document.querySelector('.js-push-btn');
 pushBtn.addEventListener('click', allowWebPush);
 
 /**
